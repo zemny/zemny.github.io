@@ -1,0 +1,142 @@
+body {
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
+
+.center {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Aboreto", cursive;
+}
+
+.navn {
+  margin-bottom: 20px;
+}
+
+.tilbake {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: 550px;
+}
+
+.flyin {
+  position: relative;
+  top: 200px;
+  opacity: 0;
+  animation-name: flyin;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flyin {
+  100% {
+    top: 0px;
+    opacity: 100%;
+  }
+}
+
+.box {
+  width: 550px;
+  height: 100px;
+  background-color: black;
+  margin: 10px 20px 50px 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(232, 232, 232);
+}
+
+.imgtext {
+  padding-bottom: 0px;
+  position: relative;
+  bottom: 500px;
+  left: 340px;
+}
+
+.imgtext2 {
+  padding-bottom: 0px;
+  position: relative;
+  bottom: 500px;
+  left: 570px;
+  text-align: left;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgContainer:hover {
+  -webkit-filter: brightness(150%);
+  transition-duration: 500ms;
+  transition-property: all;
+}
+
+.imgC1 {
+  background-image: url("./images/cave.png");
+}
+
+.imgC2 {
+  background-image: url("./images/skel.png");
+}
+
+.imgC3 {
+  background-image: url("./images/door.png");
+}
+
+.imgC4 {
+  background-image: url("./images/profil.png");
+}
+
+.imgC5 {
+  background-image: url("./images/backroom.png");
+}
+
+.imgC6 {
+  background-image: url("./images/outline.jpg");
+}
+
+.ps {
+  position: relative;
+  left: 320px;
+  bottom: 20px;
+  scale: 10%;
+  opacity: 0;
+  animation-name: opacity;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms;
+}
+
+.blender {
+  position: relative;
+  left: 320px;
+  bottom: 620px;
+  scale: 35%;
+  opacity: 0;
+  animation-name: opacity;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-delay: 1200ms;
+}
+
+@keyframes opacity {
+  100% {
+    opacity: 100%;
+  }
+}

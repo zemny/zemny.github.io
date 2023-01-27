@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fly-in1 {
+  position: relative;
+  top: 2000px;
+  animation-name: flyin;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flyin {
+  100% {
+    top: 0px;
+  }
+}
+
+.fly-in2 {
+  position: relative;
+  top: 2000px;
+  animation-name: flyin;
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flyin {
+  100% {
+    top: 0px;
+  }
+}
+
+.fly-in3 {
+  position: relative;
+  top: 2000px;
+  animation-name: flyin;
+  animation-duration: 1400ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flyin {
+  100% {
+    top: 0px;
+  }
+}
+
+.center {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  font-family: "Aboreto", cursive;
+}
+
+.navn {
+  margin-bottom: 20px;
+}
+
+.imgtext {
+  padding-bottom: 0px;
+  position: relative;
+  bottom: 225px;
+  opacity: 0;
+}
+
+.box {
+  width: 450px;
+  height: 450px;
+  background-color: black;
+  margin: 20px 10px 50px 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(232, 232, 232);
+}
+
+.box:hover .imgtext {
+  opacity: 1;
+  transition-duration: 500ms;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box:hover .imgContainer {
+  -webkit-filter: brightness(50%);
+  transition-duration: 500ms;
+  transiti: transform 0.5s ease;
+  transform: scale(1.05);
+}
+
+.imgC1 {
+  background-image: url("./images/cave.png");
+}
+
+.imgC2 {
+  background-image: url("./images/skel.png");
+}
+
+.imgC3 {
+  background-image: url("./images/door.png");
+}
+
+.imgC4 {
+  background-image: url("./images/profil.png");
+}
+
+.imgC5 {
+  background-image: url("./images/backroom.png");
+}
+
+.imgC6 {
+  background-image: url("./images/outline.jpg");
+}
